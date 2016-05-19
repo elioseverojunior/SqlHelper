@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Elio Severo Junior")]
 [assembly: AssemblyProduct("SqlHelper")]
 [assembly: AssemblyCopyright("Copyright ©  2016. All Rights Reserved")]
-[assembly: AssemblyTrademark("Elio Severo Junior")]
+[assembly: AssemblyTrademark("https://github.com/elioseverojunior/SqlHelper")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

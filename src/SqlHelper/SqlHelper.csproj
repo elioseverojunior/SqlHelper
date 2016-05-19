@@ -48,14 +48,12 @@
     <Compile Include="Class\PrimaryKey.cs" />
     <Compile Include="Class\EntityMapper.cs" />
     <Compile Include="Extensions\SqlHelperExtensions.cs" />
-    <Content Include="SqlDb_With_Dispose.txt" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SqlDb.cs" />
-    <Content Include="SqlDb.txt" />
     <Compile Include="Abstract\SqlDbTypeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
