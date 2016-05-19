@@ -28,8 +28,8 @@ namespace SqlHelper.Abstract
 
         protected override void Initialize()
         {
-            DbKeys = new List<PrimaryKey>();
-            GetAllPrimaryKeysFromDatabaseTables();
+            //DbKeys = new List<PrimaryKey>();
+            //GetAllPrimaryKeysFromDatabaseTables();
         }
 
         #endregion Protected Methods

@@ -9,6 +9,7 @@ namespace SqlHelper
     /// <see cref="!:https://github.com/elioseverojunior/SqlHelper">this</see> MSDN-Link.
     ///     AHref <a href="https://github.com/elioseverojunior/SqlHelper">here</a>.
     ///     see-href <see href="https://github.com/elioseverojunior/SqlHelper">here</see>.
+    /// </para>
     /// </summary>
     public class SqlDb :
         SqlDbHelper

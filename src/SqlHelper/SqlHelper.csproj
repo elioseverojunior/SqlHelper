@@ -48,6 +48,7 @@
     <Compile Include="Class\PrimaryKey.cs" />
     <Compile Include="Class\EntityMapper.cs" />
     <Compile Include="Extensions\SqlHelperExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
