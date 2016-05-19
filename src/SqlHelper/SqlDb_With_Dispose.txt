@@ -1,0 +1,56 @@
+﻿using SqlHelper.Abstract;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace SqlHelper
+{
+    public class SqlDb :
+        SqlDbConnection,
+        IDisposable
+    {
+        #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SqlDb"></see> class.
+        /// </summary>
+        public SqlDb(string aplicativo, string servidor, string banco, string usuario, string senha, int connectionTimeOut = 120)
+            : base(aplicativo, servidor, banco, usuario, senha, connectionTimeOut)
+        {
+        }
+
+        #endregion Constructors
+
+        #region IDisposable Members
+
+        /// <summary>
+        /// Releases unmanaged and - optionally - managed resources
+        /// </summary>
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+        }
+
+        void IDisposable.Dispose()
+        {
+            if (CnBanco != null)
+            {
+                if (CnBanco.State == ConnectionState.Open)
+                {
+                    CnBanco.Close();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Releases unmanaged resources and performs other cleanup operations before the
+        /// <see cref="SqlDb"></see> is reclaimed by garbage collection.
+        /// </summary>
+        ~SqlDb()
+        {
+            Dispose();
+        }
+
+        #endregion IDisposable Members
+    }
+}

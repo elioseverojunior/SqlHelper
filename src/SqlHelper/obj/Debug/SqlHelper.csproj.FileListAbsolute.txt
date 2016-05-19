@@ -1,0 +1,14 @@
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\bin\Debug\SqlHelper.dll
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\bin\Debug\SqlHelper.pdb
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\obj\Debug\SqlHelper.Properties.Resources.resources
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\obj\Debug\SqlHelper.csproj.GenerateResource.Cache
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\obj\Debug\SqlHelper.dll
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\obj\Debug\SqlHelper.pdb
+C:\Users\elio\Documents\Visual Studio 2015\Projects\SqlHelper\SqlHelper\obj\Debug\SqlHelper.csprojResolveAssemblyReference.cache
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\bin\Debug\SqlHelper.dll
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\bin\Debug\SqlHelper.pdb
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\obj\Debug\SqlHelper.csprojResolveAssemblyReference.cache
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\obj\Debug\SqlHelper.Properties.Resources.resources
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\obj\Debug\SqlHelper.csproj.GenerateResource.Cache
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\obj\Debug\SqlHelper.dll
+C:\Users\elio\Source\Repos\SqlHelper\SqlHelper\SqlHelper\obj\Debug\SqlHelper.pdb
