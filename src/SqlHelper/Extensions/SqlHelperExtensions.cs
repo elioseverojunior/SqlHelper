@@ -85,5 +85,49 @@ namespace SqlHelper.Extensions
             }
             return item;
         }
+
+        public static IEnumerable<T> GetAllData<T>(this IEnumerable<T> value, SqlCommand command, Func<T, bool> predicate = null)
+            where T : class, new()
+        {
+            List<T> resultado = new List<T>();
+            try
+            {
+                T item = new T();
+                var properties = item.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly).ToList();
+                using (IDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        item = new T();
+                        foreach (var property in properties)
+                        {
+                            try
+                            {
+                                if (!reader.IsDBNull(reader.GetOrdinal(property.Name)))
+                                {
+                                    Type convertTo = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
+                                    property.SetValue(item, Convert.ChangeType(reader[property.Name], convertTo), null);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception(string.Format("Erro ao tentar setar o valor '{0}' no campo '{1}': Descrição do Erro: {2}", reader[property.Name].ToString(), property.Name, ex.Message));
+                            }
+                        }
+                        resultado.Add(item);
+                    }
+                }
+                value = resultado.AsEnumerable();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            if (predicate != null)
+                return value.Where(predicate).AsEnumerable();
+            else
+                return value.AsEnumerable();
+        }
     }
 }

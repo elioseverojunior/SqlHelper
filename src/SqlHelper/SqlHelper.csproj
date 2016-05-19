@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abstract\SqlDbHelper.cs" />
     <Compile Include="Abstract\SqlDbHelperConnection.cs" />
+    <Compile Include="Class\PredicateBuilder.cs" />
     <Compile Include="Class\PrimaryKey.cs" />
     <Compile Include="Class\EntityMapper.cs" />
     <Compile Include="Extensions\SqlHelperExtensions.cs" />
